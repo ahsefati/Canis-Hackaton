@@ -121,8 +121,8 @@ function Imagesource() {
     return (
         <Col span={24} gutter={[24,6]}>
             <Divider orientation="center" style={{marginTop:'24px'}}/>
-            <Row>
-                <Col span={18}>
+            <Row justify={'space-between'}>
+                <Col span={16}>
                     <Title level={4}>Image Reference Credibility Analysis</Title>
                     <Text>After two hours of reviewing datasets manually, we noticed that there is a big difference on how publishers of Fake and True articles reference images.</Text>
                     <br/>

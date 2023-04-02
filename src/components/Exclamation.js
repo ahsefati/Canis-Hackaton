@@ -122,8 +122,8 @@ function Exclamtion() {
     return (
         <Col span={24} gutter={[24,6]}>
             <Divider orientation="center" style={{marginTop:'24px'}}/>
-            <Row>
-                <Col span={18}>
+            <Row justify={'space-between'}>
+                <Col span={16}>
                     <Title level={4}>Exclamation Usage Analysis</Title>
                     <Text>Exclamtion points are used to send a "It is important" or "This is strange" signal which attracts more audience. After reviewing the datasets manually using a simple VS Code editor, we noticed that the usage of exclamtion points differ significantly between Fake and True articles.</Text>
                     <br/>

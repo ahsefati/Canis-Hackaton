@@ -169,8 +169,8 @@ function TimeAnalysis() {
     return (
         <Col span={24} gutter={[24,6]}>
             <Divider orientation="center" style={{marginTop:'24px'}}/>
-            <Row justify={'center'}>
-                <Col span={18}>
+            <Row justify={'space-between'}>
+                <Col span={16}>
                     <Title level={4}>Time Frame Analysis</Title>
                     <Text>When there is something important going on in large scale (e.x., the elections), it is normal if we experience Fake news to publish and spread more. That was a motivation for us to dive into Fake and True datasets to see if there is any major peaks in the years that large scale things happened in the world.</Text>
                     <br/>

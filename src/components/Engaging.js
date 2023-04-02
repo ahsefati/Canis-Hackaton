@@ -120,8 +120,8 @@ function Engaging() {
     return (
         <Col span={24} gutter={[24,6]}>
             <Divider orientation="center" style={{marginTop:'24px'}}/>
-            <Row>
-                <Col span={18}>
+            <Row justify={'space-between'}>
+                <Col span={16}>
                     <Title level={4}>Engaging Words Usage Analysis</Title>
                     <Text>There is modern slang in the social media: using too many hashtags is a sign for False news! It's completely normal to use hashtags, mentions, and other ways to engage people in order to have a interaction with the article you published. But if there are too many usage of this "engaging" words and methods, that can be suspecious.</Text>
                     <br/>

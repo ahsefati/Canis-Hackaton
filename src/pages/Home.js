@@ -39,6 +39,8 @@ import Imagesource from "../components/Imagesource";
 import Exclamtion from "../components/Exclamation";
 import Engaging from "../components/Engaging";
 import TimeAnalysis from "../components/TimeAnalysis";
+import Readability from "../components/Readability";
+import General from "../components/General";
 
 function Home() {
   const { Title, Text } = Typography;
@@ -77,12 +79,12 @@ function Home() {
     {
       title: "Readability Analysis",
       link: "7",
-      component: <Sentiment/>
+      component: <Readability/>
     },
     {
       title: "Name Entity Analysis",
       link: "8",
-      component: <Sentiment/>
+      component: <General/>
     },
   ];
 
@@ -176,6 +178,7 @@ function Home() {
               {analysis.map((c, index) => (
                 <Col
                   onClick={()=>setWhichAnalysis(c.link)}
+                  style={{cursor:'pointer'}}
                   key={index}
                   xs={24}
                   sm={24}
@@ -185,7 +188,7 @@ function Home() {
                 >
                   <Card style={{border:(c.link===whichAnalysis)?'2px solid #A5E1F5':'2px dashed gray', transition:'all ease-out 1s', backgroundColor: (isPointing)?'gray':(c.link===whichAnalysis)?'#A5E1F5':'inherit'}}>
                     <div className="number">
-                      <div style={{cursor:'pointer'}}>
+                      <div>
                         <Row align="middle" gutter={[24, 0]}>
                           <Col xs={24}>
                             <Text style={{color:'black'}}><strong>{c.title}</strong></Text>
