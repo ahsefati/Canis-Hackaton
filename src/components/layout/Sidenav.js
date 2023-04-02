@@ -191,10 +191,10 @@ function Sidenav({ color }) {
             >
               {tables}
             </span>
-            <span className="label">Tables</span>
+            <span className="label">Interactive Model</span>
           </NavLink>
         </Menu.Item>
-        {/* <Menu.Item key="3">
+        {/*<Menu.Item key="3">
           <NavLink to="/billing">
             <span
               className="icon"

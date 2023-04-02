@@ -34,17 +34,17 @@ import Paragraph from "antd/lib/typography/Paragraph";
 import Echart from "../components/chart/EChart";
 import LineChart from "../components/chart/LineChart";
 
-import ava1 from "../assets/images/logo-shopify.svg";
-import ava2 from "../assets/images/logo-atlassian.svg";
-import ava3 from "../assets/images/logo-slack.svg";
-import ava4 from "../assets/images/logo-spotify.svg";
-import ava5 from "../assets/images/logo-jira.svg";
-import ava6 from "../assets/images/logo-invision.svg";
-import team1 from "../assets/images/team-1.jpg";
-import team2 from "../assets/images/team-2.jpg";
-import team3 from "../assets/images/team-3.jpg";
-import team4 from "../assets/images/team-4.jpg";
-import card from "../assets/images/info-card-1.jpg";
+import ava1 from "../assets/images/Sentiment.png";
+import ava2 from "../assets/images/Sentiment.png";
+import ava3 from "../assets/images/Sentiment.png";
+import ava4 from "../assets/images/Sentiment.png";
+import ava5 from "../assets/images/Sentiment.png";
+import ava6 from "../assets/images/Sentiment.png";
+import team1 from "../assets/images/Sentiment.png";
+import team2 from "../assets/images/Sentiment.png";
+import team3 from "../assets/images/Sentiment.png";
+import team4 from "../assets/images/Sentiment.png";
+import card from "../assets/images/Sentiment.png";
 
 function Home() {
   const { Title, Text } = Typography;
