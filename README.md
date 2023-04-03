@@ -15,4 +15,4 @@ Finally, you can use `npm start` or `yarn start` (preferred) to start the projec
 If anything happened and you were not able to run this repository, please kindly email me at: ahsefati1998@gmail.com
 
 ## Credit
-I have used a dashboard template which is publicly available at https://www.creative-tim.com/product/muse-ant-design-dashboard
+I have used the AntD principles of desing. This styling framework is available at https://ant.design/
