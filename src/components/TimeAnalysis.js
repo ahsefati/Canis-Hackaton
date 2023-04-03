@@ -172,14 +172,14 @@ function TimeAnalysis() {
             <Row justify={'space-between'}>
                 <Col span={16}>
                     <Title level={4}>Time Frame Analysis</Title>
-                    <Text>When there is something important going on in large scale (e.x., the elections), it is normal if we experience Fake news to publish and spread more. That was a motivation for us to dive into Fake and True datasets to see if there is any major peaks in the years that large scale things happened in the world.</Text>
+                    <Text>When there is something important going on a large scale (e.g., the elections), it is normal if we experience more Fake news publishing and spreading. That was a motivation for us to dive into Fake and True datasets to see if there are any major peaks in the years that large-scale things happened in the world.</Text>
                     <br/>
                     <br/>
-                    <Text><strong>What we found?</strong> Initially, we explore datasets which tooks us around 1 hour to understand that the time frames referenced in each article is different between True and Fake news. Then, we start to think about the big things that happened in the last years. Since the datasets are collected before the COVID-virus, the most controversial happening was the USA 2016 election where Donald Trumpt and Hillary Clinton were the main candidates.</Text>
+                    <Text><strong>What we found?</strong> Initially, we explored datasets, which took us around 1 hour to understand that the time frames referenced in each article are different between True and Fake news. Then, we start to think about the big things that happened in the last few years. Since the datasets were collected before the COVID virus, the most controversial event was the USA 2016 election, where Donald Trump and Hillary Clinton were the main candidates.</Text>
                     <br/>
-                    <Text style={{marginTop:'4px'}}><strong>So?</strong> We start analyzing the number of articles regarding the referenced or published year of that article.</Text>
+                    <Text style={{marginTop:'4px'}}><strong>So?</strong> We start analyzing the number of articles with regard to the referenced or published year of that article.</Text>
                     <br/>
-                    <Text style={{marginTop:'4px'}} ><strong>How?</strong> Same as exclmation analysis, we simply implemented a function called "count_ref_years" which is applied to each article in the datasets using ".apply" method of the Python Pandas dataframe. This function will count the years that are referenced by the period of 2000 to 2030. Then, we sorted the output to see which years are the most referenced ones. The results were super-interesting which are described in the next paragraphs.</Text>
+                    <Text style={{marginTop:'4px'}} ><strong>How?</strong> Same as exclmataion analysis, we simply implemented a function called "count_ref_years" which is applied to each article in the datasets using the ".apply" method of the Python Pandas dataframe. This function will count the years that are referenced by the period from 2000 to 2030. Then, we sorted the output to see which years are the most referenced ones. The results were super-interesting and are described in the next few paragraphs.</Text>
                 </Col>
                 <Col span={6}>
                     <Image src={Time_01}/>
@@ -192,7 +192,7 @@ function TimeAnalysis() {
                 <Col span={16}>
                     <Row>
                         <Col span={23}>
-                            <Text>Below, the number of ocurrences for each year which is referenced in Fake and True datasets can be seen. One can see the unstability of the trend in Fake news. For example, the number of ocurrences for the years 2016 and 2017 is 22096 and 13061, respectively. 2016-2017 is the year of USA election as guessed before and it magnifies publishing the Fake news by a factor of 5! On the other hand, there is no significant increase in the number of published True news over the time.</Text>
+                            <Text>Below, the number of occurrences for each year that is referenced in the Fake and True datasets can be seen. One can see the instability of the trend in Fake news. For example, the number of occurrences for 2016 and 2017 is 22096 and 13061, respectively. 2016-2017 is the year of the USA election, as guessed before, and it magnifies the publication of Fake News by a factor of 5! On the other hand, there has been no significant increase in the number of published True News over time.</Text>
                             <br/>
                             <Row gutter={[12,12]} justify={'center'} style={{marginTop:'12px'}}>
                                 <Col span={20}>

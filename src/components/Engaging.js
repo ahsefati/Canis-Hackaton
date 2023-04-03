@@ -123,14 +123,14 @@ function Engaging() {
             <Row justify={'space-between'}>
                 <Col span={16}>
                     <Title level={4}>Engaging Words Usage Analysis</Title>
-                    <Text>There is modern slang in the social media: using too many hashtags is a sign for False news! It's completely normal to use hashtags, mentions, and other ways to engage people in order to have a interaction with the article you published. But if there are too many usage of this "engaging" words and methods, that can be suspecious.</Text>
+                    <Text>There is modern slang in the social media: using too many hashtags is a sign for False news! It's completely normal to use hashtags, mentions, and other ways to engage people in order to have an interaction with the article you published. But if there are too many instances of these "engaging" words and methods, that can be suspicious.</Text>
                     <br/>
                     <br/>
-                    <Text><strong>The Difference?</strong> First, we wondered if there is any difference in the intencity of engaging audience. From our experience, we have seen many authors kind of "attack" their targeted audience to make them interact with the article by liking, sharing or commenting! That can be a danger sign. Then, we simply searched for "#", "@", and some other engaging words such as "like us", "follow us", etc. The result amazed us. For example, there was around 10500 hashtags in Fake articles while it was around 2000 in the True dataset.</Text>
+                    <Text><strong>The Difference?</strong> First, we wondered if there was any difference in the intensity of engaging the audience. From our experience, we have seen many authors kind of "attack" their targeted audience to make them interact with the article by liking, sharing, or commenting! That can be a warning sign. Then, we simply searched for "#", "@", and some other engaging words such as "like us", "follow us", etc. The result amazed us. For example, there were around 10500 hashtags in Fake articles, whereas there were around 2000 in the True dataset.</Text>
                     <br/>
-                    <Text style={{marginTop:'4px'}}><strong>So?</strong> We start analyzing the number of using engaging words by searching for combinations of different engaging ways described above.</Text>
+                    <Text style={{marginTop:'4px'}}><strong>So?</strong> We start analyzing the number of engaging words by searching for combinations of the different engaging ways described above.</Text>
                     <br/>
-                    <Text style={{marginTop:'4px'}} ><strong>How?</strong> We implemented a function called "count_engaging_words" which is applied to each article in the datasets using ".apply" method of the Python Pandas dataframe.</Text>
+                    <Text style={{marginTop:'4px'}} ><strong>How?</strong> We implemented a function called "count_engaging_words" which is applied to each article in the datasets using the ".apply" method of the Python Pandas dataframe.</Text>
                 </Col>
                 <Col span={6}>
                     <Image src={Engaging_01}/>
@@ -140,7 +140,7 @@ function Engaging() {
                 <Col span={16}>
                     <Row>
                         <Col span={23}>
-                            <Text>Below, you can see the distribution for number of engaging words used in Fake news. On average, you can see 143 engagings (combination of different ways) when reading 100 Fake news. Approximately, we can say there is around 1.5 engaging words in each Fake article!</Text>
+                            <Text>Below, you can see the distribution of the number of engaging words used in Fake news. On average, you can see 143 engagements (combinations of different ways) when reading 100 Fake News stories. Approximately, we can say there are around 1.5 engaging words in each Fake article!</Text>
                             <br/>
                             <Row gutter={[12,12]} justify={'center'} style={{marginTop:'12px'}}>
                                 <Col span={20}>
@@ -151,7 +151,7 @@ function Engaging() {
                     </Row>
                     <Row style={{marginTop:'24px'}}>
                         <Col span={23}>
-                            <Text>On the other hand, the same code is executed for True news dataset and the distribution changed in a meaningful way. As it can be seen in the plot below, on avergae, one will see just 32 engaging word used when reading 100 True articles. (Compared to 143 for the Fake news)</Text>
+                            <Text>On the other hand, the same code was executed for the True News dataset, and the distribution changed in a meaningful way. As it can be seen in the plot below, on average, one will see just 32 engaging words used when reading 100 True articles. (Compared to 143 for the Fake news)</Text>
                             <br/>
                             <Row gutter={[12,12]} justify={'center'} style={{marginTop:'12px'}}>
                                 <Col span={20}>
@@ -159,7 +159,7 @@ function Engaging() {
                                 </Col>
                             </Row>
                             <br/>
-                            <Text>Comparison between the results for Fake and True datasets in this analysis suggests that Fake news publishers tend to use engaging words 5 times more than True publishers which indicates that readers should not engage (like, share, or comment) when they are not sure about the credibility of the artcile.</Text>
+                            <Text>The comparison between the results for Fake and True datasets in this analysis suggests that Fake news publishers tend to use engaging words 5 times more than True publishers which indicates that readers should not engage (like, share, or comment) when they are not sure about the credibility of the article.</Text>
                         </Col>
                     </Row>
                 </Col>

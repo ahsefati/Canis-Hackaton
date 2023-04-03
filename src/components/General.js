@@ -25,9 +25,11 @@ import Paragraph from "antd/lib/typography/Paragraph";
 import ReactApexChart from "react-apexcharts";
 
 
-import Engaging_01 from '../assets/images/Engaging_01.png'
-import Engaging_result_01 from '../assets/images/Engaging_result_01.png'
-import Engaging_result_02 from '../assets/images/Engaging_result_02.png'
+import General_01_01 from '../assets/images/General_01_01.png'
+import General_01_02 from '../assets/images/General_01_02.png'
+import General_02 from '../assets/images/General_02.jpg'
+import General_03_01 from '../assets/images/General_03_01.jpg'
+import General_03_02 from '../assets/images/General_03_02.jpg'
 
 
 function General() {
@@ -90,15 +92,51 @@ function General() {
                             <li>Removing stop words. (common words that do not carry much meaning, such as "the", "and", "of", etc.)</li>
                             <li>Lemmatizing each word (converting words to their base form, such as "running" to "run").</li>
                             <li>Joining the processed words back into a single string.</li>
-                            <Text>The processed text is saved in a new column called "text_processed" in the dataset, and this column is used for all of the following analysis as well as the specific analysis described in previous sections.</Text>
+                            <Text>The processed text is saved in a new column called "text_processed" in the dataset, and this column is used for all of the following general analysis as well as the specific analysis described in previous sections.</Text>
+                            <Text style={{fontSize:'14px', color:'black'}}>Word Clouds</Text>
+                            <br/>
+                            <Text>By generating word clouds, the most frequently occurring words in each dataset can be observed. These words are usually larger and bolder in the word cloud. Some observations and conclusions based on the word clouds is as follows.</Text>
+                            <br/>
+                            <Text>Fake news dataset: The most frequently occurring words in the fake news dataset include "Trump", "Hillary", "Obama", "Clinton", "election", "news", "media", "Russia", "campaign", "vote", "email", "FBI", "investigation", "white house", and "false". These words suggest that the fake news in this dataset is largely related to politics, especially the 2016 US presidential election and the controversies surrounding it. (It is also detected and explained in the "Time Analysis" section.)</Text>
+                            <br/>
                             <Row gutter={[12,12]} justify={'center'} style={{marginTop:'12px'}}>
-                                <Col span={20}>
-                                    <Image src={Engaging_result_02}/>
+                                <Col span={12}>
+                                    <Image src={General_01_01}/>
                                 </Col>
                             </Row>
                             <br/>
-                            <Text>Comparison between the results for Fake and True datasets in this analysis suggests that Fake news publishers tend to use engaging words 5 times more than True publishers which indicates that readers should not engage (like, share, or comment) when they are not sure about the credibility of the artcile.</Text>
+                            <Text>True news dataset: The most frequently occurring words in the true news dataset include "Trump", "president", "time", "US", "government", "people", "percent", "new", "year", "states", "company", "house", "health", and "officials". These words suggest that the true news in this dataset is more diverse in topic, using less the names of famous people and organisations, but still heavily related to US politics and government.</Text>
+                            <br/>
+                            <Row gutter={[12,12]} justify={'center'} style={{marginTop:'12px'}}>
+                                <Col span={12}>
+                                    <Image src={General_01_02}/>
+                                </Col>
+                            </Row>
+                            <br/>
+                            <Text>As is evident in the bar charts below, there are some words that appear more frequently in one dataset than the other. For example, words like "Trump", "Clinton", "Obama", "Hillary" appear more frequently in the fake news dataset, while words like "said", "people", "government" and "president" appear more frequently in the true news dataset, which can show that fake news more often uses topics related to celebrities and governmental parties and may be more focused on political figures and sensational topics to attract people.</Text>
+                            <Row gutter={[12,12]} justify={'center'} style={{marginTop:'24px'}}>
+                                <Col span={24}>
+                                    <Image src={General_02}/>
+                                </Col>
+                            </Row>
                         </Col>
+                    </Row>
+                    <Row style={{marginTop:'24px'}}>
+                      <Text style={{fontSize:'14px', color:'black'}}>Word Count Analysis</Text>
+                      <br/>
+                      <Text>In this stage, we tried to calculate the average word count in each dataset, and the result was 533 versus 436 for True and Fake datasets, respectively.</Text>
+                      <br/>
+                      <Text>Based on this result, we can conclude that the true news dataset has a higher average word count than the fake news dataset. This may indicate that true news articles tend to provide more detailed information and analysis, while fake news articles may rely more on sensationalism and attention-grabbing headlines. However, it's important to note that this is just one aspect of the data, and further analysis is needed to draw more definitive conclusions as you can explore other types of analysis in previous sections.</Text>
+                      <br/>
+                      <Text>We also investigated the distribution of word count, and below are the related histograms.</Text>
+                      <Row gutter={[12,12]} justify={'center'} style={{marginTop:'24px'}}>
+                          <Col span={12}>
+                              <Image src={General_03_01}/>
+                          </Col>
+                          <Col span={12}>
+                              <Image src={General_03_02}/>
+                          </Col>
+                      </Row>
                     </Row>
                 </Col>
             </Row>

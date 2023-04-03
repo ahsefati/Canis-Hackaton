@@ -122,14 +122,14 @@ function Readability() {
             <Row justify={'space-between'}>
                 <Col span={16}>
                     <Title level={4}>Readability Analysis</Title>
-                    <Text>One of the first things that pops up in our mind was a hypothesis: Audience are more attracted to an article when it's easier to read and understand compared to articles which are more difficult to read. Therefore, we decide to take time and calculate the readability score for both True and Fake datasets.</Text>
+                    <Text>One of the first things that pops up in our mind is a hypothesis: audiences are more attracted to an article when it's easier to read and understand compared to articles that are more difficult to read. Therefore, we decided to take the time to calculate the readability score for both the True and Fake datasets.</Text>
                     <br/>
                     <br/>
-                    <Text><strong>What we found?</strong> We try to calculate the readability score for each article using 7 different algorithms that utilize variuos approaches and equations to determine the readability of a text. However, on average, the final result indicates that there is no major difference in the level of readability for True and Fake datasets.</Text>
+                    <Text><strong>What we found?</strong> We try to calculate the readability score for each article using 7 different algorithms that utilize various approaches and equations to determine the readability of a text. However, on average, the final result indicates that there is no major difference in the level of readability between the True and Fake datasets.</Text>
                     <br/>
-                    <Text style={{marginTop:'4px'}}><strong>So?</strong> After implementing and executing all the different methods and obtaining 7 scores for each dataset, the results are shown in the plot below which suggests that the Fake news are as readable as the True articles no matter which scoring method is used.</Text>
+                    <Text style={{marginTop:'4px'}}><strong>So?</strong> After implementing and executing all the different methods and obtaining 7 scores for each dataset, the results are shown in the plot below, which suggests that the Fake News are as readable as the True articles no matter which scoring method is used.</Text>
                     <br/>
-                    <Text style={{marginTop:'4px'}} ><strong>How?</strong> We used "TextStat" library in Python which provides different readability scoring methods. Then we use the ".apply" function in Pandas to apply each method to each article in the datasets.</Text>
+                    <Text style={{marginTop:'4px'}} ><strong>How?</strong> We used the "TextStat" library in Python, which provides different readability scoring methods. Then we use the ".apply" function in Pandas to apply each method to each article in the datasets.</Text>
                 </Col>
                 <Col span={6}>
                     <Image src={Readability_01}/>
@@ -142,22 +142,20 @@ function Readability() {
                 <Col span={16}>
                     <Row>
                         <Col span={23}>
-                            <Text>Below, the number of ocurrences for each year which is referenced in Fake and True datasets can be seen. One can see the unstability of the trend in Fake news. For example, the number of ocurrences for the years 2016 and 2017 is 22096 and 13061, respectively. 2016-2017 is the year of USA election as guessed before and it magnifies publishing the Fake news by a factor of 5! On the other hand, there is no significant increase in the number of published True news over the time.</Text>
-                            <br/>
                             <Row gutter={[12,12]} justify={'center'} style={{marginTop:'24px'}}>
                                 <Col span={20}>
                                   <ReactApexChart options={firstDiagram.options} series={firstDiagram.series} type="bar"/>
                                 </Col>
                             </Row>
                             <br/>
-                            <Text><strong>A short description for each of the used methods is as following:</strong></Text>
-                            <li>FleschReadingEase: A formula to calculate the ease of readability in a given text based on average sentence length and syllables per word.</li>
-                            <li>SMOGIndex: A readability formula that estimates the years of education required to understand a given text based on the number of polysyllabic words.</li>
-                            <li>FleschKincaidGradeLevel: A readability formula that estimates the grade level needed to understand a given text based on average sentence length and syllables per word.</li>
-                            <li>ColemanLiauIndex: A readability formula that estimates the grade level needed to understand a given text based on the number of characters and words in the text.</li>
-                            <li>AutomatedReadabilityIndex: A readability formula that estimates the grade level needed to understand a given text based on average sentence length and the number of words in the text.</li>
-                            <li>DaleChallReadabilityScore: A formula that estimates the difficulty of a given text by considering the frequency of words that are not on a list of 3,000 familiar words.</li>
-                            <li>LinsearWriteFormula: A readability formula that estimates the grade level needed to understand a given text based on the number of simple and complex sentences in the text.</li>
+                            <Text><strong>A short description for each of the used methods is as follows:</strong></Text>
+                            <li>Flesch Reading-Ease: A formula to calculate the ease of readability in a given text based on average sentence length and syllables per word.</li>
+                            <li>SMOG Index: A readability formula that estimates the years of education required to understand a given text based on the number of polysyllabic words.</li>
+                            <li>Flesch-Kincaid Grade Level: A readability formula that estimates the grade level needed to understand a given text based on average sentence length and syllables per word.</li>
+                            <li>Coleman-Liau Index: A readability formula that estimates the grade level needed to understand a given text based on the number of characters and words in the text.</li>
+                            <li>Automated Readability Index: A readability formula that estimates the grade level needed to understand a given text based on average sentence length and the number of words in the text.</li>
+                            <li>DaleChall Readability Score: A formula that estimates the difficulty of a given text by considering the frequency of words that are not on a list of 3,000 familiar words.</li>
+                            <li>Linsear Write Formula: A readability formula that estimates the grade level needed to understand a given text based on the number of simple and complex sentences in the text.</li>
                         </Col>
                     </Row>
                 </Col>

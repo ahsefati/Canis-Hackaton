@@ -256,13 +256,13 @@ function Websource() {
             <Row justify={'space-between'}>
                 <Col span={16}>
                     <Title level={4}>Web Source Credibility Analysis</Title>
-                    <Text>Misinformation usually comes from low credible sources. In many cases, false publishers try to reference their content to other websites to increase the believability of the article.</Text>
+                    <Text>Misinformation usually comes from less credible sources. In many cases, false publishers try to reference their content on other websites to increase the believability of the article.</Text>
                     <br/>
-                    <Text>The fact is those websites are not even highly popular (in terms of telling the truth) themselves!</Text>
+                    <Text>The fact is, those websites are not even highly popular (in terms of telling the truth) themselves!</Text>
                     <br/>
-                    <Text><strong>Yes!</strong> We analyze the websites that are referenced in each article in order to find out if there is any big differences.</Text>
+                    <Text><strong>Yes!</strong> We analyze the websites that are referenced in each article in order to find out if there are any big differences.</Text>
                     <br/>
-                    <Text>We used regular expressions to extract all the URLs that end with popular domain extension such as ".com", ".net", and ".org".</Text>
+                    <Text>We used regular expressions to extract all the URLs that end with popular domain extensions such as ".com", ".net", and ".org".</Text>
                     <br/>
                 </Col>
                 <Col span={6}>
@@ -273,7 +273,7 @@ function Websource() {
                 <Col span={16}>
                     <Row>
                         <Col span={23}>
-                            <Text>Top 10 most referenced websites is shown in the plot below. As it's observable, FoxNews.com is the most frequently used website in True articles as a reference. Also, it is obvious that the authors of True articles are not trying to manipulate the reader by referencing too many websites for the news. The number of using websites is way lower than the Fake dataset which is described in the next paragraph.</Text>
+                            <Text>The top 10 most referenced websites are shown in the plot below. As it's observable, FoxNews.com is the most frequently used website in True articles as a reference. Also, it is obvious that the authors of True articles are not trying to manipulate the reader by referencing too many websites for the news. The number of websites used is way lower than the Fake dataset which is described in the next paragraph.</Text>
                             <br/>
                             <Row gutter={[12,12]} justify={'center'} style={{marginTop:'36px'}}>
                                 <Col span={20}>
@@ -284,16 +284,16 @@ function Websource() {
                     </Row>
                     <Row>
                         <Col span={23}>
-                            <Text>On the other hand, top 10 most referenced websites in Fake dataset is shown in the plot below. The most obvious difference that can be seen is the number of websites used to reference in Fake dataset. This fact suggests the authors of false information will try aggresively to refer to other websites in order to make the article look more credible. Also, note that according to Google's crawlers, using backlinks, can improve SEO of your website. So, if there are many false publsihers actively referencing to each other websites, their rank in google search engine will improve!</Text>
+                            <Text>On the other hand, the top 10 most referenced websites in the Fake dataset are shown in the plot below. The most obvious difference that can be seen is the number of websites used to reference the Fake dataset. This fact suggests the authors of false information will try aggressively to refer to other websites in order to make the article look more credible. Also, note that according to Google's crawlers, using backlinks can improve the SEO of your website. So, if there are many false publishers actively referencing each other's websites, their rank in the Google search engine will improve!</Text>
                             <br/>
                             <Row gutter={[12,12]} justify={'center'} style={{marginTop:'36px'}}>
                                 <Col span={20}>
                                   <ReactApexChart options={thirdDiagram.options} series={thirdDiagram.series} type="bar"/>
                                 </Col>
                             </Row>
-                            <Text>As it can be seen, on interesting result is the times "FoxNews" is referenced. It has been referenced pretty the same in True (79 times) and Fake (84 times) datasets. It suggests that the fake publishers try to somehow mix the truth and lies by referencing credible websites such as "FoxNews" when it comes to the truth part.  As a result, the final lie is more believable!</Text>
+                            <Text>As it can be seen, an interesting result is the number of times "FoxNews" is referenced. It has been referenced pretty much the same in the True (79 times) and Fake (84 times) datasets. It suggests that the fake publishers try to somehow mix the truth and lies by referencing credible websites such as "FoxNews" when it comes to the truth part.  As a result, the final lie is more believable!</Text>
                             <br/><br/>
-                            <Text>Finally, one can see the major usage of Twitter to spread misinformation. This platform is a heaven for false propaganda publishers since a tweet can get viral in minutes using smart algorithms and robots! It lets you use a virtual account and you can even create bots to automatically re-tweet or like your tweets to make it look more legit!</Text>
+                            <Text>Finally, one can see the major use of Twitter to spread misinformation. This platform is a heaven for false propaganda publishers since a tweet can go viral in minutes using smart algorithms and robots! It lets you use a virtual account, and you can even create bots to automatically retweet or like your tweets to make it look more legit!</Text>
                         </Col>
                     </Row>
                 </Col>

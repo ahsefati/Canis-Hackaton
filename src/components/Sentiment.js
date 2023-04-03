@@ -122,13 +122,13 @@ function Sentiment() {
             <Row>
                 <Col span={18}>
                     <Title level={4}>Sentiment Analysis</Title>
-                    <Text>Have you ever noticed FALSE Information commonly use negative and aggressive voice?</Text>
+                    <Text>Have you ever noticed that FALSE Information commonly uses a negative and aggressive voice?</Text>
                     <br/>
-                    <Text>Do you know that Negativity in addition to being loud is one way to get attraction?</Text>
+                    <Text>Do you know that Negativity, in addition to being loud, is one way to get attention?</Text>
                     <br/>
                     <Text>Well! <strong>That's Right!</strong></Text>
                     <br/>
-                    <Text>We did an extensive study to analyze the type of language used in the Fake and True Dataset in order to determine the Negativity/Positivity/Neturality of each article. Here is the final result:</Text>
+                    <Text>We did an extensive study to analyze the type of language used in the Fake and True datasets in order to determine the Negativity, Positivity, and Neutrality of each article. Here is the final result:</Text>
                     <br/>
                 </Col>
                 <Col span={6}>
@@ -142,12 +142,12 @@ function Sentiment() {
                             <Text style={{fontSize:'18px', fontWeight:'bold'}}>1</Text>
                         </Col>
                         <Col span={23}>
-                            <Text>As the <strong>first way</strong>, Natural Language Toolkit (nltk) library is used to download the VADER (Valence Aware Dictionary and Sentiment Reasoner) lexicon for sentiment analysis. The average sentiment score for each dataset can be seen in the right plot. As it was predictable, false news use more negative wording to target audience.</Text>
+                            <Text>As the <strong>first way</strong>, the Natural Language Toolkit (nltk) library is used to download the VADER (Valence Aware Dictionary and Sentiment Reasoner) lexicon for sentiment analysis. The average sentiment score for each dataset can be seen in the right plot. As was predictable, false news uses more negative wording to target its audience.</Text>
                             <br/>
                             <br/>
-                            <Text>While the average score is important to see how language can spread misinformation faster, the distribution of scores should be also studied.</Text>
+                            <Text>While the average score is important to see how language can spread misinformation faster, the distribution of scores should also be studied.</Text>
                             <br/>
-                            <Text><strong style={{fontSize:'14px'}}>Why?</strong> Consider the worst scenario where all the news (both true and fake) have a netural sentiment except two: One Fake article has a sentiment score of -1 and just one True news has a score of +1. In this situation, the average will be -1 and +1 for Fake and True dataset, respectively.</Text>
+                            <Text><strong style={{fontSize:'14px'}}>Why?</strong> Consider the worst scenario where all the news (both true and fake) has a neutral sentiment except two: One Fake article has a sentiment score of -1, and just one True article has a score of +1. In this situation, the average will be -1 and +1 for the Fake and True datasets, respectively.</Text>
                             <br/>
                             <Text><strong style={{fontSize:'14px'}}>So?</strong> The plot below shows the distribution of sentiment scores for Fake and True articles.</Text>
                             <Row gutter={[12,12]} style={{marginTop:'12px'}}>
@@ -167,12 +167,12 @@ function Sentiment() {
                             <Text style={{fontSize:'18px', fontWeight:'bold'}}>2</Text>
                         </Col>
                         <Col style={{marginTop:'6px'}} span={23}>
-                            <Text>Before perfoming an exact sentiment analysis (like what we do in the first way), "TextBlob" library and the "gaussian_kde" function from the "scipy.stats" library are used to estimate the kernel density of sentiment polarity values for each article in both datasets. </Text>
+                            <Text>Before performing an exact sentiment analysis (like what we do in the first way), the "TextBlob" library and the "gaussian_kde" function from the "scipy.stats" library are used to estimate the kernel density of sentiment polarity values for each article in both datasets. </Text>
                             <br/>
                             <br/>
-                            <Text><strong style={{fontSize:'14px'}}>Why?</strong>Using this quick method, we were able to find out that there is a difference between sentiment scores of True and Fake datasets. Only after our hypothesis was confirmed with this method, we started exploring other algorithms to calculate an exact score for each label.</Text>
+                            <Text><strong style={{fontSize:'14px'}}>Why?</strong> Using this quick method, we were able to find out that there is a difference between the sentiment scores of the True and Fake datasets. Only after our hypothesis was confirmed with this method, did we start exploring other algorithms to calculate an exact score for each label.</Text>
                             <br/>
-                            <Text><strong style={{fontSize:'14px'}}>What was the estimated results?</strong> The plot below shows the distribution of sentiment scores for Fake and True articles which were estimated at first.</Text>
+                            <Text><strong style={{fontSize:'14px'}}>What were the estimated results?</strong> The plot below shows the distribution of sentiment scores for the Fake and True articles, which were initially estimated.</Text>
                             <Row gutter={[12,12]} justify={'center'} style={{marginTop:'12px'}}>
                                 <Col span={16}>
                                     <Image src={sentiment_02_result}/>

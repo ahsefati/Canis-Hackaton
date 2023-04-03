@@ -82,7 +82,7 @@ function Home() {
       component: <Readability/>
     },
     {
-      title: "Name Entity Analysis",
+      title: "General Analysis and Reports",
       link: "8",
       component: <General/>
     },
@@ -163,7 +163,7 @@ function Home() {
                     <div className="card-content">
                       <Title level={5}>Welcome!</Title>
                       <p>
-                        In this project, first, we browsed data to understand it in a better way. Then, we cleaned it up in order to make the analysis more reliable. Third, we analyzed data in different ways and using different algorithms as you can try each of them in below. Forth, we created a logistic Regression Model which predicts if the news is a misinformation. Finally, we created this web application to present our results in an interactive way. 
+                      In this project, we first browsed the data to better understand it. Then, we cleaned it up in order to make the analysis more reliable. Third, we analyzed data in different ways and using different algorithms, as you can try each of them out below. Forth, we created a "Passive Agressive" Model which predicts if the news is misinformation. Finally, we created this web application to present our results in an interactive way.
                       </p>
                     </div>
                     <div className="card-footer">
@@ -207,12 +207,12 @@ function Home() {
             </Row>
           </Col>
 
-          <Col xs={24} sm={24} md={12} lg={6} xl={3} className="mb-24">
+          <Col xs={24} sm={24} md={12} lg={6} xl={4} className="mb-24">
             <Card bordered={false} className="criclebox h-full">
               <div className="timeline-box">
                 <Title level={5}>Project History</Title>
                 <Paragraph className="lastweek" style={{ marginBottom: 24 }}>
-                  We Did <span className="bnb2">8</span> Analysis and We Learnt a lot!
+                  We Did <span className="bnb2">8</span> Analysis and We Learned a lot!
                 </Paragraph>
 
                 <Timeline

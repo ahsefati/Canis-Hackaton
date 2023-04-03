@@ -124,14 +124,14 @@ function Imagesource() {
             <Row justify={'space-between'}>
                 <Col span={16}>
                     <Title level={4}>Image Reference Credibility Analysis</Title>
-                    <Text>After two hours of reviewing datasets manually, we noticed that there is a big difference on how publishers of Fake and True articles reference images.</Text>
+                    <Text>After two hours of manually reviewing datasets, we noticed that there was a big difference in how publishers of Fake and True articles reference images.</Text>
                     <br/>
                     <br/>
-                    <Text><strong>The Difference?</strong> Fake news referenced image content more frequently using Twitter, Getty Images, Flickr, and AFP image hosting providers. For example, "t.co" which is a image hosting service for Twitter was used around 4000 times! Another interesting fact about image referencing is the authors of False news have used screenshots as a reference more than 3000 times while True publishers haven't use this low credible way of referencing at all!</Text>
+                    <Text><strong>The Difference?</strong> Fake news references image content more frequently using Twitter, Getty Images, Flickr, and AFP image hosting providers. For example, "t.co", which is an image hosting service for Twitter, was used around 4000 times! Another interesting fact about image referencing is that the authors of False news have used screenshots as references more than 3000 times while True publishers haven't used this low-credible way of referencing at all!</Text>
                     <br/>
-                    <Text style={{marginTop:'4px'}}><strong>So?</strong> We analyzed the average number of low crediable sources for images per article in both Fake and True news datasets.</Text>
+                    <Text style={{marginTop:'4px'}}><strong>So?</strong> We analyzed the average number of low-credible sources for images per article in both the Fake and True news datasets.</Text>
                     <br/>
-                    <Text style={{marginTop:'4px'}} ><strong>How?</strong> We used regular expressions to extract the usage of keywords mentioned above. Also, we include keywords such as "screenshot", "screen capture", and "screengrab" to extract the ones that are referencing only to a screenshot which is not crediable in no way!</Text>
+                    <Text style={{marginTop:'4px'}} ><strong>How?</strong> We used regular expressions to extract the usage of the keywords mentioned above. Also, we include keywords such as "screenshot", "screen capture", and "screengrab" to extract the ones that are referencing only a screenshot which is not credible in any way!</Text>
                 </Col>
                 <Col span={6}>
                     <Image preview={true} src={Websources_01}/>
@@ -141,7 +141,7 @@ function Imagesource() {
                 <Col span={16}>
                     <Row>
                         <Col span={23}>
-                            <Text>Below, you can see the distribution of number of low crediable image sourcing for Fake articles. In average, one in two articles in Fake dataset have referenced a low crediable source for their pictures. The exact average is 47 times per 100 articles which is shown by a red line in the plot. </Text>
+                            <Text>Below, you can see the distribution of low-credible image sourcing for Fake articles. On average, one in two articles in the Fake dataset has referenced a low-credible source for their pictures. The exact average is 47 times per 100 articles which is shown by a red line in the plot. </Text>
                             <br/>
                             <Row gutter={[12,12]} justify={'center'} style={{marginTop:'12px'}}>
                                 <Col span={20}>
@@ -152,7 +152,7 @@ function Imagesource() {
                     </Row>
                     <Row style={{marginTop:'24px'}}>
                         <Col span={23}>
-                            <Text>On the other hand, the same code is executed for True news dataset and the number of low credible image sourcing is around zero in all cases. On avergae, only 5 articles per 1000 have referenced a low crediable source for their image content. That is around 100 times less than Fake news which suggests a big difference that can be used to classify articles efficiently.</Text>
+                            <Text>On the other hand, the same code is executed for the True News dataset and the number of low-credible image sources is around zero in all cases. On average, only 5 articles per 1000 have referenced a low-credible source for their image content. That is around 100 times less than Fake news which suggests a big difference that can be used to classify articles efficiently.</Text>
                             <br/>
                             <Row gutter={[12,12]} justify={'center'} style={{marginTop:'12px'}}>
                                 <Col span={20}>
