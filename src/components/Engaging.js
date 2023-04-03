@@ -166,7 +166,6 @@ function Engaging() {
                 <Col span={6}>
                     <Row justify={'center'} style={{margin:'12px'}}>
                         <ReactApexChart options={firstDiagram.options} series={firstDiagram.series} type="bar" height={"250px"} width={"320px"}/>
-                        <Text>Summary</Text>
                     </Row>
                 </Col>
             </Row>

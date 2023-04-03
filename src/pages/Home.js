@@ -47,6 +47,11 @@ function Home() {
   
   const analysis = [
     {
+      title: "General Analysis and Reports",
+      link: "8",
+      component: <General/>
+    },
+    {
       title: "Sentiment (Emotion) Analysis",
       link: "1",
       component: <Sentiment/>
@@ -81,11 +86,7 @@ function Home() {
       link: "7",
       component: <Readability/>
     },
-    {
-      title: "General Analysis and Reports",
-      link: "8",
-      component: <General/>
-    },
+    
   ];
 
   const timelineList = [
@@ -149,7 +150,7 @@ function Home() {
     }, 300);
   }
 
-  const [whichAnalysis, setWhichAnalysis] = useState("1")
+  const [whichAnalysis, setWhichAnalysis] = useState("8")
 
   return (
     <>

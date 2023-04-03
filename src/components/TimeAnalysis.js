@@ -183,9 +183,6 @@ function TimeAnalysis() {
                 </Col>
                 <Col span={6}>
                     <Image src={Time_01}/>
-                    <Row justify={'center'} style={{marginTop:'12px'}}>
-                      <Text style={{fontSize:'16px', color:'black'}}>Summary</Text>
-                    </Row>
                 </Col>
             </Row>
             <Row style={{marginTop:'18px'}} justify={'space-between'}>

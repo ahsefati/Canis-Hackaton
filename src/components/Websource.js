@@ -301,9 +301,6 @@ function Websource() {
                     <Row justify={'end'}>
                         <ReactApexChart options={firstDiagram.options} series={firstDiagram.series} type="pie" height={"320px"}/>
                     </Row>
-                    <Row justify={'center'} style={{marginTop:'12px'}}>
-                      <Text style={{color:'black', fontSize:'16px'}}>Summary</Text>
-                    </Row>
                 </Col>
             </Row>
         </Col>
