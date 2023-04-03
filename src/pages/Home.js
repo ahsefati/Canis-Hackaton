@@ -100,7 +100,7 @@ function Home() {
       color: "green",
     },
     {
-      title: "Browse the Dataset Manually and Got Insights.",
+      title: "Browsing the Dataset Manually and Getting Insights.",
       time: "01 APR 01:00 AM",
     },
     {
@@ -167,7 +167,9 @@ function Home() {
                       </p>
                     </div>
                     <div className="card-footer">
-                      <Button type="default" shape="round" icon={<RightSquareOutlined />} size="middle" style={{fontSize:'18px',}}>Try Our Model</Button>
+                      <NavLink to={'/model'}>
+                        <Button type="default" shape="round" icon={<RightSquareOutlined />} size="middle" style={{fontSize:'18px',}}>Try Our Model</Button>
+                      </NavLink>
                       <Button onClick={handlePointingToDiv} type="link" shape="round" icon={<DownSquareOutlined />} size="middle" style={{fontSize:'18px', marginLeft:'12px', color:'white'}}>Explore Analysis</Button>
                     </div>
                   </div>

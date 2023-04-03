@@ -182,16 +182,16 @@ function Sidenav({ color }) {
           </NavLink>
         </Menu.Item>
         <Menu.Item key="2">
-          <NavLink to="/tables">
+          <NavLink to="/model">
             <span
               className="icon"
               style={{
-                background: page === "tables" ? color : "",
+                background: page === "model" ? color : "",
               }}
             >
               {tables}
             </span>
-            <span className="label">Interactive Model</span>
+            <span className="label">ML Model</span>
           </NavLink>
         </Menu.Item>
         {/*<Menu.Item key="3">
@@ -220,7 +220,7 @@ function Sidenav({ color }) {
             <span className="label">RTL</span>
           </NavLink>
         </Menu.Item> */}
-        <Menu.Item className="menu-item-header" key="5">
+        {/* <Menu.Item className="menu-item-header" key="5">
           Information
         </Menu.Item>
         <Menu.Item key="6">
@@ -247,7 +247,7 @@ function Sidenav({ color }) {
             <span className="icon">{signup}</span>
             <span className="label">About CANIS</span>
           </NavLink>
-        </Menu.Item>
+        </Menu.Item> */}
       </Menu>
     </>
   );
